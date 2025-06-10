@@ -1,7 +1,9 @@
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'About',
   description: 'About page',
+  keywords: ['About Page', 'Información acerca de la página']
 };
 
 export default function AboutPage() {
