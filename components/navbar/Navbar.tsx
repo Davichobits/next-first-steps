@@ -1,5 +1,6 @@
 import {HomeIcon} from '@primer/octicons-react'
 import Link from "next/link"
+import {ActiveLink} from "../../components";
 
 interface INavItems {
   path: string;
@@ -19,7 +20,7 @@ export const Navbar = () => {
         <HomeIcon size={16} />
       </Link>
       <ul className="flex gap-2">
-        {navItems.map((item:INavItems) =><li key={item.text}><Link href={item.path}>{item.text}</Link></li>)}
+        {navItems.map((item:INavItems) =><ActiveLink key={item.text} {...item} />)}
       </ul>
     </nav>
   )
