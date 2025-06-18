@@ -1,3 +1,10 @@
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+  description: 'Main page for the dashboard',
+}
+
 export default function MainPage() {
   return (
     <div>

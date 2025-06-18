@@ -8,6 +8,7 @@ import { IoBrowsersOutline, IoCalculator, IoLogoReact } from "react-icons/io5";
 const navItems = [
   { title: "Dashboard", subtitle: 'Visualización', icon: <IoBrowsersOutline size={24}/>, path: "/dashboard/main" },
   { title: "Settings", subtitle: 'Contador Client Side', icon: <IoCalculator size={24}/>, path: "/dashboard/counter" },
+  { title: "Pokemons", subtitle: 'Gestión de Pokemons', icon: <IoLogoReact size={24}/>, path: "/dashboard/pokemons" }
 ];
 
 export const Sidebar = () => {
