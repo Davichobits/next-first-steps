@@ -1,4 +1,4 @@
-import { SimplePokemon, PokemonCard } from "@/app/pokemons";
+import { SimplePokemon, PokemonCard } from "../../pokemons";
 
 
 
