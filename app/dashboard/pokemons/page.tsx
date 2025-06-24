@@ -24,7 +24,7 @@ const getPokemons = async (limit = 20, offset = 0): Promise<SimplePokemon[]> => 
 
 const PokemonsPage = async () => {
 
-  const pokemons = await getPokemons(150);
+  const pokemons = await getPokemons(151);
   
   return (
     <div className="flex flex-col bg-white">
