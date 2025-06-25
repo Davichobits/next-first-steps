@@ -2,7 +2,7 @@ import { Sidebar } from "../../components/side-bar";
 
 export default function DashboardLayout({ children }: { children: React.ReactNode; }) {
   return (
-    <div className="bg-slate-100 w-screen h-screen antialiased text-slate-300 selection:bg-blue-600 selection:text-white">
+    <div className="bg-slate-100 h-full antialiased text-slate-300 selection:bg-blue-600 selection:text-white">
 
       <div className="flex">
 
