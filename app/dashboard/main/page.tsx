@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import { SimpleWidget } from "@/components"
 
 export const metadata: Metadata = {
   title: 'Dashboard',
@@ -7,8 +8,12 @@ export const metadata: Metadata = {
 
 export default function MainPage() {
   return (
-    <div>
-      <h1>Main Page</h1>
+    <div className="text-black p-2">
+      <h1 className="mt-2 text-3xl">Dashboard</h1>
+      <span className="text-xl">Información General</span>
+      <div className="flex flex-wrap p-2">
+        <SimpleWidget />
+      </div>
     </div>
   )
 }

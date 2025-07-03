@@ -3,12 +3,13 @@ import Image from "next/image"
 // components
 import { SideBarMenuItem } from "../side-bar";
 
-import { IoBrowsersOutline, IoCalculator, IoLogoReact } from "react-icons/io5";
+import { IoBrowsersOutline, IoCalculator, IoHeartOutline, IoLogoReact } from "react-icons/io5";
 
 const navItems = [
   { title: "Dashboard", subtitle: 'Visualización', icon: <IoBrowsersOutline size={24}/>, path: "/dashboard/main" },
   { title: "Settings", subtitle: 'Contador Client Side', icon: <IoCalculator size={24}/>, path: "/dashboard/counter" },
-  { title: "Pokemons", subtitle: 'Gestión de Pokemons', icon: <IoLogoReact size={24}/>, path: "/dashboard/pokemons" }
+  { title: "Pokemons", subtitle: 'Generación Estática', icon: <IoLogoReact size={24}/>, path: "/dashboard/pokemons" },
+  { title: "Favoritos", subtitle: 'Global Estate', icon: <IoHeartOutline size={24}/>, path: "/dashboard/favorites" },
 ];
 
 export const Sidebar = () => {
