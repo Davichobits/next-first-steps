@@ -14,7 +14,6 @@ export const CartCounter = ({ value = 0 }: Props) => {
   const dispatch = useAppDispatch();
 
   useEffect(()=>{
-    console.log('useEffect');
     dispatch(initCounter(value))
     setLoading(false)
   }, [dispatch, value]);
