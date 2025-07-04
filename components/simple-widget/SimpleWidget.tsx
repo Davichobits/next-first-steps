@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { IoCafeOutline } from "react-icons/io5"
 
 export const SimpleWidget = () => {
@@ -21,7 +22,7 @@ export const SimpleWidget = () => {
         </div>
 
         <div className="w-full place-items-end text-right border-t-2 border-gray-100 mt-2">
-            <a href="#" className="text-indigo-600 text-xs font-medium">Más</a>
+            <Link href="#" className="text-indigo-600 text-xs font-medium">Más</Link>
         </div>
         
       </div>

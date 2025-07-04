@@ -4,6 +4,7 @@ import Image from "next/image"
 import { SideBarMenuItem } from "../side-bar";
 
 import { IoBrowsersOutline, IoCalculator, IoHeartOutline, IoLogoReact } from "react-icons/io5";
+import Link from "next/link";
 
 const navItems = [
   { title: "Dashboard", subtitle: 'Visualización', icon: <IoBrowsersOutline size={24}/>, path: "/dashboard/main" },
@@ -29,7 +30,7 @@ export const Sidebar = () => {
 
       <div id="profile" className="px-6 py-10">
         <p className="text-slate-500">Welcome back,</p>
-        <a href="#" className="inline-flex space-x-2 items-center">
+        <Link href="#" className="inline-flex space-x-2 items-center">
           <span>
             <Image 
               className="rounded-full w-8 h-8" 
@@ -42,7 +43,7 @@ export const Sidebar = () => {
           <span className="text-sm md:text-base font-bold">
             Edward Tompson
           </span>
-        </a>
+        </Link>
       </div>
       
       <div id="nav" className="w-full px-6">
