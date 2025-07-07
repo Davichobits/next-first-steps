@@ -14,6 +14,7 @@ export const WidgetsGrid = () => {
           subtitle='unidades'
           label='Contador'
           icon={<IoAirplane size={50}/>} 
+          href="/dashboard/counter"
         />
         <SimpleWidget title="otro" />
       </div>
