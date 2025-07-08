@@ -6,12 +6,24 @@ export const metadata: Metadata = {
   description: 'Counter page for the dashboard',
 }
 
-export default function Counter() {
+const getCount = async (): Promise<{count:number}> =>{
+  const data = await fetch('http://localhost:3000/api/counter').then(data=>data.json());
+  console.log('DATA', data);
+  return data;
+}
+
+export default async function Counter() {
+
+  const {count} = await getCount();
   
   return (
     <div className="flex flex-col items-center justify-center w-full h-full">
       <span>Productos en el carrito</span>
-      <CartCounter value={20} />
+
+      {
+        count !== undefined && <CartCounter value={count} />
+      }
+      
     </div>
   )
 }
