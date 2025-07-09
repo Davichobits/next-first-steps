@@ -5,7 +5,7 @@ import { PokemonCard } from "..";
 
 
 export const PokemonFavoriteGrid = () => {
-  const favoritesPokemons = useAppSelector(state => state.pokemons)
+  const favoritesPokemons = useAppSelector(state => state.pokemons.favorites)
   const [pokemons] = useState(Object.values(favoritesPokemons))
 
   
